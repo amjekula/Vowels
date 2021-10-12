@@ -37,6 +37,14 @@
         <url>http://172.17.0.2:8081/repository/vowels-counter-app/</url>
     </snapshotRepository>
 </distributionManagement>
+  
+  <servers>
+    <server>
+      <id>vowels-counter-app</id>  <!-- must match this -->
+      <username>admin</username>
+      <password>password</password>
+    </server>
+  </servers>
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
