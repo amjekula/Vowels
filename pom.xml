@@ -28,7 +28,7 @@
   
   <distributionManagement>
     <snapshotRepository>
-        <id>snapshots</id>
+        <id>vowels-counter-app</id>
         <url>http://172.17.0.2:8081/repository/vowels-counter-app/</url>
     </snapshotRepository>
 </distributionManagement>
@@ -36,6 +36,18 @@
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
+        
+        <plugin>
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nexus-staging-maven-plugin</artifactId>
+                <version>1.6.6</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <serverId>vowels-counter-app</serverId>
+                    <nexusUrl>http://172.17.0.2:8081/repository/vowels-counter-app</nexusUrl>
+                </configuration>
+            </plugin>
+        
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
