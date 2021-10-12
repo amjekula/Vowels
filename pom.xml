@@ -100,7 +100,7 @@
                 <goal>deploy-file</goal>
             </goals>
             <configuration>
-                <file>${basedir}/target/${name}-${version}.jar</file>
+                <file>${basedir}/target/Testing-${version}.jar</file>
                 <url>http://url</url>
                 <repositoryId>jenkins-maven-uploads</repositoryId>
                 <packaging>jar</packaging>
