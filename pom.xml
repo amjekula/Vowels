@@ -101,7 +101,7 @@
             </goals>
             <configuration>
                 <file>${basedir}/target/Testing-${version}.jar</file>
-                <url>http://url</url>
+                <url>http://172.17.0.2:8081/repository/vowels-counter-app/</url>
                 <repositoryId>jenkins-maven-uploads</repositoryId>
                 <packaging>jar</packaging>
             </configuration>
