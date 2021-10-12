@@ -38,11 +38,15 @@
     </snapshotRepository>
 </distributionManagement>
   
-   <server>
+  <settings>
+  <servers>
+    <server>
       <id>vowels-counter-app</id>
       <username>admin</username>
       <password>password</password>
     </server>
+  </servers>
+  </settings>
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
