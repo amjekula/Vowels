@@ -1,0 +1,7 @@
+ <servers>
+    <server>
+      <id>vowels-counter-app</id>  <!-- must match this -->
+      <username>admin</username>
+      <password>password</password>
+    </server>
+  </servers>
