@@ -31,7 +31,7 @@
   <distributionManagement>
     <snapshotRepository>
         <id>snapshots</id>
-        <url>http://localhost:8081/#admin/repository/repositories:vowels-counter-app/</url>
+        <url>http://localhost:8081/repository/vowels-counter-app/</url>
     </snapshotRepository>
 </distributionManagement>
 
