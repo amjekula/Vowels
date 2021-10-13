@@ -1,47 +1,38 @@
-<!--<settings xmlns="http://maven.apache.org/SETTINGS/1.1.0"
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd">
-<servers>
-  <server>
-      <id>vowels-counter-app</id>
-      <username>admin</username>
-      <password>password</password>
-    </server>
-</servers>
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
 
-<profiles>
-  <profile>
-    <id>default</id>
-    <repositories>
-      <repository>
-        <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-      <id>vowels-counter-app</id>
-      <name>vowels-counter-app</name>
-      <url>http://172.17.0.2:8081/repository/vowels-counter-app/</url>
-    </repository>
-  </repositories>
-  <pluginRepositories>
-    <pluginRepository>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-      <id>vowels-counter-app</id>
-      <name>vowels-counter-app</name>
-      <url>http://172.17.0.2:8081/repository/vowels-counter-app/</url>
-      </pluginRepository>
-    </pluginRepositories>
-  </profile>
-</profiles>
+    <servers>
+        <server>
+            <username>admin</username>
+            <password>password</password>
+            <id>maven-releases</id>
+        </server>
 
-<activeProfiles>
-  <activeProfile>default</activeProfile>
-</activeProfiles>
-</settings>-->
+        <server>
+            <username>admin</username>
+            <password>password</password>
+            <id>maven-snapshots</id>
+        </server>
+    </servers>
+
+    <mirrors>
+        <mirror>
+            <id>maven-central</id>
+            <name>maven-central</name>
+            <url>http://172.17.0.2:8081/repository/maven-central/</url>
+            <mirrorOf>*</mirrorOf>
+        </mirror>
+    </mirrors>
+    <!--<servers>
+        <server>
+            <username>admin</username>
+            <password>password</password>
+            <id>vowels-counter-app</id>
+        </server>
+    </servers>
+    <pluginGroups>
+        <pluginGroup>org.apache.maven.plugins</pluginGroup>
+        <pluginGroup>org.codehaus.mojo</pluginGroup>
+    </pluginGroups-->
+</settings>
