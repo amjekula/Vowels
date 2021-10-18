@@ -13,7 +13,7 @@ pipeline {
         }
       }
 
-      stage('Deploy to Nexus') {
+      stage('Test') {
         steps {
         withMaven(maven: 'maven3'){
             sh 'mvn test'
