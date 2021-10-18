@@ -5,15 +5,15 @@ pipeline {
         //docker{ image 'jenkins/inbound-agent'}
     }
     stages {
-      stage('maven compile') {
+      stage('Clean') {
         steps {
            withMaven (maven: 'maven3'){
-                sh 'mvn clean compile'
+                sh 'mvn clean'
            }
         }
       }
 
-      stage('maven test') {
+      stage('Deploy to Nexus') {
         steps {
         withMaven(maven: 'maven3'){
             sh 'mvn test'
