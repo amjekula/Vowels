@@ -1,7 +1,8 @@
 pipeline {
     //agent any
     agent{
-        label 'linux-agent'
+        //label 'linux-agent'
+        docker{ image 'jenkinsci/jnlp-slave'}
     }
     stages {
       stage('maven compile') {
