@@ -1,5 +1,8 @@
 pipeline {
-    agent any
+    //agent any
+    agent{
+        label 'linux-agent'
+    }
     stages {
       stage('maven compile') {
         steps {
