@@ -4,7 +4,7 @@ pipeline {
         label 'linux-agent'
         //docker{ image 'jenkins/inbound-agent'}
     }
-    //stages {
+    stages {
      // stage('Clean') {
        // steps {
          //  withMaven (maven: 'maven3'){
